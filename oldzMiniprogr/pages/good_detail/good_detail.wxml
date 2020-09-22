@@ -1,0 +1,57 @@
+
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==showTab?'text-orange cur':''}}" wx:for="{{tab.length}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{tab[index]}}
+    </view>
+  </view>
+  </scroll-view>
+
+   <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+        <swiper-item wx:for="{{4}}" wx:key="index">
+          <image src="../../images/mineBg.jpeg" mode='aspectFill'></image>
+        </swiper-item>
+    </swiper>
+
+<view class="{{showTab==0?'':'miss'}}">
+  <van-cell-group title="基本信息">
+    <van-cell center title="书名：{{product.bookName}}" size="large" />
+    <van-cell center title="作者：{{product.authorBrief}}" size="large" />
+    <van-cell center title="{{product.publisher}}" size="large" />
+    <van-cell center title="{{product.isbn}}" size="large" value="" />
+  </van-cell-group>
+
+  <van-cell-group title="购买信息">
+   <van-cell center title="价格：{{product.price}}" size="large" />
+    <van-cell center title="优惠" value="暂无" />
+  </van-cell-group>  
+
+  <van-cell-group title="商家信息">
+    <van-cell title="无" value="" />
+  </van-cell-group> 
+
+</view>    
+
+<view class="{{showTab==1?'':'miss'}}">
+   <van-cell center title="详细信息" size="large" />
+   <van-cell center title="{{product.detailWord}}" size="large" />
+</view>
+<view class="{{showTab==2?'':'miss'}}">
+  <van-cell-group title="评价">
+  </van-cell-group>
+</view>
+<view class="">
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" dot />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" bindtap="toCart"/>
+  <van-goods-action-icon icon="shop-o" text="店铺" />
+  <van-goods-action-button text="加入购物车" type="warning" bindtap="addShopCart" data-product="{{product}}"/>
+  <van-goods-action-button text="立即购买" />
+</van-goods-action>
+</view>
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+  <view class='gray-text'>加入购物车成功！</view>
+</view>
+
+

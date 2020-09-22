@@ -1,0 +1,19 @@
+.index-swiper{
+  height: 30vh;
+  width: 100vw;
+}
+
+.index-swiper swiper-item{
+  display: flex;
+  justify-content: center;
+}
+
+.changeBig{
+  transform: scale(1.1);
+  transition: all 200ms ease-in 0s;
+}
+
+.changeSmall{
+  transform: scale(0.8);
+  transition: all 200ms ease-in 0s;
+}

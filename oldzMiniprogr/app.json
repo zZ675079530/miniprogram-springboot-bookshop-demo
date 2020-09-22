@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/discover/discover",
+    "pages/shoppingCart/shoppingCart",
+    "pages/classification/classification",
+    "pages/mine/mine",
+    "pages/good_detail/good_detail",
+    "pages/classification/good_list/good_list",
+    "pages/discover/word/word"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OldZ",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#00afb4",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 4px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "images/nav/find-off.png",
+        "selectedIconPath": "images/nav/find-on.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "iconPath": "images/nav/classification-off.png",
+        "selectedIconPath": "images/nav/classification-on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "iconPath": "images/nav/cart-off.png",
+        "selectedIconPath": "images/nav/cart-on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

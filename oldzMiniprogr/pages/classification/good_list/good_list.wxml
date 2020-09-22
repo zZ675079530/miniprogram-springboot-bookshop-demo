@@ -1,0 +1,24 @@
+
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu>
+
+
+<scroll-view>
+  <view wx:for="{{list.length}}" wx:key="index">
+    <van-card
+  tag="热销"
+  price="{{list[index].price}}"
+  desc="{{list[index].briefIntroduction}}"
+  title="{{list[index].bookName}}"
+  thumb="../../../../images/nav/cart-on.png"
+  bindtap="toDetail"
+  data-product="{{list[index]}}"
+>
+  <view slot="footer">
+    <van-button size="mini">{{list[index].publisher}}</van-button>
+  </view>
+</van-card>
+  </view>
+</scroll-view>

@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-grid": "../../miniprogram_npm/@vant/weapp/grid/index",
+    "van-grid-item": "../../miniprogram_npm/@vant/weapp/grid-item/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-row": "../../miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "../../miniprogram_npm/@vant/weapp/col/index",
+    "van-image": "../../miniprogram_npm/@vant/weapp/image/index",
+    "van-divider": "../../miniprogram_npm/@vant/weapp/divider/index"
+    
+    
+  }
+}

@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view class="containHead" style='background-image: url({{serverUrl}}/images/mineBg.jpeg);'>
+    <view class="userInfo-view">
+    <van-image round width="20vw" height="20vw" src="{{userInfo.avatarUrl}}"/>
+     <view class="text-white nickName">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">22{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> View</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">33{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> Star</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">1{{forksCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-fork"></text> Fork</view>
+    </view>
+  </view>
+  
+<van-divider customStyle="border-color: #fbc146; border-solid:10rpx solid"/>
+
+  <van-grid column-num="3">
+  <van-grid-item icon="photo-o" text="我的订单" />
+  <van-grid-item icon="photo-o" text="收货地址" />
+  <van-grid-item icon="photo-o" text="个人信息"/>
+  <van-grid-item icon="photo-o" text="我的收藏" />
+  <van-grid-item icon="photo-o" text="最近浏览" />
+  <van-grid-item icon="photo-o" text="关于我们" />
+</van-grid>
+
+<view class="horizontal-center-view">
+  <van-button class="margin 15" round color="#ed545f" type="primary" bind:getuserinfo="onGetUserInfo" open-type="getUserInfo" data-text="{{text}}">{{text}}</van-button>
+  
+</view>
+
+</view>

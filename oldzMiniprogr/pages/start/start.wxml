@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container" >
+  <view class="contentup">
+  <text class="title">欢迎来到-></text>
+  <text class="title right">老张的书铺</text>
+  </view>
+  <view class="contentdown">
+     
+      <image class="wave" src= "{{serverUrl}}/images/wave.png"mode="aspectFill"></image>
+      <image class="wave wave-two" src="{{serverUrl}}/images/wave2.png" mode="aspectFill"></image>
+      <image class="wave wave-return" src= "{{serverUrl}}/images/wave.png"mode="aspectFill"></image>
+
+      <image class="wave waveup" src="{{serverUrl}}/images/wave.png" mode="aspectFill"></image>
+      <image class="wave wave-two waveup" src="{{serverUrl}}/images/wave2.png" mode="aspectFill"></image>
+       <image class="wave wave-return waveup" src= "{{serverUrl}}/images/wave.png"mode="aspectFill"></image>
+
+      <view class="viewDown"> 
+        <image class="walker" src="/images/walk1.gif" mode="aspectFit"></image>
+        <van-button class="buttonIn" bindtap="toIndex" round color="#dd8d8e" >进入书铺
+        <text wx:for="{{textNum}}" class="cuIcon-right lg text-write"></text></van-button>
+      </view>
+      
+
+      
+    </view>
+
+
+    <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="headimg" src="{{userInfo.avatarUrl}}"></image>
+    </block>
+    </view> -->
+
+</view>

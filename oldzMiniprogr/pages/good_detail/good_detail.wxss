@@ -1,0 +1,9 @@
+body{
+  width: 100vw;
+}
+.miss{
+  display: none
+}
+.bottom{
+  margin-bottom: 10vh;
+}

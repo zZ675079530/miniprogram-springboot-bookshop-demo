@@ -1,0 +1,117 @@
+/**index.wxss**/
+/* .contentmiddle{
+  position: absolute;
+  bottom: 100rpx;
+  width: 100vw;
+  height: 200rpx;
+  background-color: grey;
+  /* transition: all .35s ease; */
+ /* } */ 
+.title{
+  color: white;
+  font-size: 100rpx;
+  font: bold;
+  position: absolute;
+  left: 5vw;
+  top: 20vh;
+}
+.right{
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 5vh;
+  left: 70vw
+}
+.wave{
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 40vh;
+  animation: wave 20.25s infinite;
+  animation-delay: 0s;
+}
+
+.wave-two{
+  animation: wave-two 20.25s infinite;
+  animation-delay: 0s;
+}
+.wave-return{
+  animation: wave-three 20.25s infinite;
+  animation-delay: 0s;
+}
+.waveup{
+  top:-10vh;
+  opacity: 0.65 ;
+}
+
+@keyframes wave{
+  from {transform: translate3d(0,0,0);}
+  to {transform: translate3d(200vw,0,0);}
+}
+@keyframes wave-two{
+  from {transform: translate3d(-100vw,0,0);}
+  to {transform: translate3d(100vw,0,0);}
+}
+@keyframes wave-three{
+  from {transform: translate3d(-200vw,0,0);}
+  to {transform: translate3d(0,0,0);}
+}
+
+
+.contentup{
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: rgba(248,224,140, 0.8);
+  animation: contentup 2s forwards;
+}
+@keyframes contentup{
+  from {background-color: rgba(248,224,140, 0); transform: translate3d(0,-60vh,0);}
+  to {background-color: rgba(248,224,140, 0.8); transform: translate3d(0,0,0);}
+}
+
+.contentdown{
+  animation: contentdown 2s forwards;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100vw;
+  height: 40vh;
+  bottom: 0;
+}
+@keyframes contentdown{
+  from {background-color: rgba(255, 255, 255, 0); transform: translate3d(0,140vh,0);}
+  to {background-color: rgb(255, 255, 255, 1); transform: translate3d(0,0,0);}
+}
+
+.walker{
+  width: 30vw;
+  transform: rotateY(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* display: flex;
+  align-content: center;
+  left: 0;*/
+  z-index: 9999; 
+}
+
+.buttonIn{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 15vh;
+
+  /* position: absolute;
+  left: 30vw;
+  right: 30vw;
+  bottom: 50%; */
+}
+
+.userinfo {
+}
+
+.headimg {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+

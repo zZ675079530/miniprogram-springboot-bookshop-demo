@@ -1,0 +1,38 @@
+<view>
+  <view>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" background="#f2cca6" shape="round" />
+    <van-notice-bar left-icon="{{serverUrl}}/images/enter.png" text="号外！：分治法慢慢搞!" />
+  </view>
+
+  <view>
+    <swiper class="index-swiper margin 5vh" autoplay="true" interval="2000" circular="true" indicator-dots="true" previous-margin="100rpx" next-margin="100rpx" bindchange="curChange">
+
+      <swiper-item wx:for="{{list}}" wx:key>
+        <view class="swiper-images" class="{{index==curIndex?'changeBig':'changeSmall'}}">
+          <image src="{{item}}" mode="aspectFill"></image>
+        </view>
+
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view>
+    <view class="margin-left 10 margin-bottom 10 text-xxl text-bold text-black">
+      <van-icon name="flag-o" size="50rpx" color="red" />限时折扣</view>
+    <view wx:for="{{6}}" wx:key="index">
+    
+      <view class="margin-left 10 margin-bottom 10 text-xxl text-bold text-black" wx:if="index/2 == 0 && index!=0">
+      {{text[index/2-1]}}
+      </view>
+
+    <van-card  tag="限时折扣" price="{{shopList[index].price}}" desc="{{shopList[index].publisher}}" title="{{shopList[index].bookName}}" thumb="../../../../images/nav/cart-on.png" bindtap="toDetail" data-product="{{shopList[index]}}">
+      <view slot="footer">
+        <van-button size="mini">按钮</van-button>
+        <van-button size="mini">按钮</van-button>
+      </view>
+    </van-card>
+    </view>
+  </view>
+
+
+</view>
