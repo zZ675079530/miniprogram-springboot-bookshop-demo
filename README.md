@@ -1,10 +1,13 @@
  miniprogram-springboot-bookshop-demo
-## 微信小程序书店，使用vant组件、colorUI。加一个简易的springboot 后台用于加载数据测试。基本完整，未完待续。
+## 微信小程序书店，使用vant组件、colorUI。加一个简易的springboot 后台用于加载数据测试。
+
+
+## 界面展示功能基本完整，其他未完待续。
 
 ----
 
 ### IdeaProjects 是springboot后台 IDE是idea2019
-#### 使用时修改application.yml里的数据库配置
+## 使用时修改application.yml里的数据库配置
 
 ----
 
@@ -26,4 +29,7 @@
 
 ## 效果图
 
-![]
+![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show1.JPG?raw=true)
+![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show2.JPG?raw=true)
+![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show3.JPG?raw=true)
+![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show4.JPG?raw=true)
