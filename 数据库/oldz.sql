@@ -1,9 +1,9 @@
-/*
+﻿/*
 Navicat MySQL Data Transfer
 
-Source Server         : centos
-Source Server Version : 80019
-Source Host           : 106.52.192.196:3306
+Source Server         : 
+Source Server Version : 
+Source Host           : 
 Source Database       : oldz
 
 Target Server Type    : MYSQL
