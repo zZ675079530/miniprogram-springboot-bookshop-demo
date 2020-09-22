@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    #mysql5 中com.mysql.jdbc.Driver
+    #mysql6 中com.mysql.cj.jdbc.Driver  注意连接时需要指定时区serverTimezone
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.52.192.195:3306/oldz?serverTimezone=UTC
+    username:
+    password: ''
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  #扫描classpath中mapper目录下的映射配置文件，针对与映射配置文件放到了resource目录下
+  mapper-locations: classpath:mapper/*.xml
+  #标签作用mapper.xml中返回pojo时不需要写包名，直接写对象名即可
+  type-aliases-package: com.gdjr.oldz2.pojo
+

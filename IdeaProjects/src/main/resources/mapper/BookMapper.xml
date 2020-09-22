@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.gdjr.oldz2.mapper.BookMapper">
+
+    <resultMap id="book" type="com.gdjr.oldz2.pojo.Book">
+        <id column="bookId" jdbcType="VARCHAR" property="bookId" />
+        <id column="categoryId" jdbcType="VARCHAR" property="categoryId" />
+        <id column="bookName" jdbcType="VARCHAR" property="bookName" />
+        <result column="price" jdbcType="VARCHAR" property="price" />
+        <result column="briefIntroduction" jdbcType="VARCHAR" property="briefIntroduction" />
+        <result column="detailWord" jdbcType="VARCHAR" property="detailWord" />
+        <result column="authorBrief" jdbcType="VARCHAR" property="authorBrief" />
+        <result column="authorDetail" jdbcType="VARCHAR" property="authorDetail" />
+        <result column="publisher" jdbcType="VARCHAR" property="publisher" />
+        <result column="pageNum" jdbcType="VARCHAR" property="pageNum" />
+        <result column="language" jdbcType="VARCHAR" property="language" />
+        <result column="ISBN" jdbcType="VARCHAR" property="ISBN" />
+    </resultMap>
+
+    <resultMap id="Category" type="com.gdjr.oldz2.pojo.Category">
+        <id column="categoryId" jdbcType="VARCHAR" property="categoryId"/>
+        <id column="parentId" jdbcType="VARCHAR" property="parentId"/>
+        <id column="name" jdbcType="VARCHAR" property="name" />
+    </resultMap>
+
+    <select id="selectByCategoryId" parameterType="String" resultMap="book">
+        select * from book_information where categoryId = #{categoryId}
+    </select>
+
+    <select id="queryBookById"  resultMap="book">
+        select * from book_information where bookId = 55
+    </select>
+    
+    <select id="queryCategory" resultMap="Category" >
+        select * from categoryStructure;
+    </select>
+
+</mapper>
