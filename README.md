@@ -33,3 +33,4 @@
 ![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show2.JPG?raw=true)
 ![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show3.JPG?raw=true)
 ![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show4.JPG?raw=true)
+![image](https://github.com/zZ675079530/miniprogram-springboot-bookshop-demo/blob/master/show5.JPG?raw=true)
